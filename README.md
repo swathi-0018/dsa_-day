@@ -34,6 +34,7 @@ Hi, I'm Swathi 👋
 - Binary Search Tree
 - Heap
 - Hashing
+- recursion
 
 ## 🔹 Algorithms
 - Searching Algorithms
