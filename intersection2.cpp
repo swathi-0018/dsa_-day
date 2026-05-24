@@ -40,6 +40,6 @@ int main() {
     }
 
     inter(a, n1, b, n2);
-
+ 
     return 0;
 }
