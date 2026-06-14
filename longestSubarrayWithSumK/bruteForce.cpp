@@ -1,6 +1,6 @@
 //longest subarray with given sum k;
 
-#include <iostream>
+#include <bits/stdC++.h>
 using namespace std;
 
 int main() {
