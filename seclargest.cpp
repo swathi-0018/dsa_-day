@@ -10,9 +10,7 @@ int sec_largest(int *n, int *arr){
         }
         if(arr[i]>slargest&&arr[i]<larg){
             slargest =arr[i];
-
         }
-
     }
     return slargest;
 
