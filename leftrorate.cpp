@@ -1,5 +1,5 @@
 // left rotation of an array by d places
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 void left_rotate (int arr[],int n)
