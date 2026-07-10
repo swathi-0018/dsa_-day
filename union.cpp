@@ -1,6 +1,6 @@
 //brute force approach;
 
-#include<iostream>
+#include<bits/stdc++.h>
 #include<vector>
 #include<set>
 using namespace std;
