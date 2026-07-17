@@ -8,9 +8,9 @@ void sel_sort(int arr[],int n){
                 min = j;
             }
         }
-        int temp = arr[i];
+        int tem = arr[i];
         arr[i] = arr[min];
-        arr[min] = temp;
+        arr[min] = tem;
     }
 }
 
