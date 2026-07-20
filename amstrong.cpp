@@ -6,12 +6,12 @@ int main(){
   cin >> n;
   int sum = 0;
   int dup = n;
-  int ld;
+  int lad;
 
   while(n > 0){
-    ld = n%10;
+    lad = n%10;
     n=n/10;
-    sum = sum + (ld*ld*ld);
+    sum = sum + (lad*lad*lad);
   }
     if (sum == dup){
         cout << "Armstrong Number";
