@@ -5,16 +5,16 @@ int main() {
     int n;
     cin >> n;
 
-    vector<int> arr(n);
+    vector<int> arrr(n);
 
     for (int i = 0; i < n; i++) {
-        cin >> arr[i];
+        cin >> arrr[i];
     }
 
     int i = 0;
     for (int j = 1; j < n; j++) {
-        if (arr[j] != arr[i]) {
-            arr[i + 1] = arr[j];
+        if (arrr[j] != arrr[i]) {
+            arrr[i + 1] = arrr[j];
             i++;
         }
     }
@@ -23,7 +23,7 @@ int main() {
 
     cout << "Array after removing duplicates: ";
     for (int k = 0; k < newSize; k++) {
-        cout << arr[k] << " ";
+        cout << arrr[k] << " ";
     }
 
     return 0;
