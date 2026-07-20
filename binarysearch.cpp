@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int binarySearch(int arr[], int n, int target) {
+int binarySearch(int arrr[], int n, int target) {
 
     int low = 0;
     int high = n - 1;
@@ -10,11 +10,11 @@ int binarySearch(int arr[], int n, int target) {
 
         int mid = (low + high) / 2;
 
-        if(arr[mid] == target) {
+        if(arrr[mid] == target) {
             return mid;
         }
 
-        else if(arr[mid] < target) {
+        else if(arrr[mid] < target) {
             low = mid + 1;
         }
 
@@ -31,16 +31,16 @@ int main() {
     int n;
     cin >> n;
 
-    int arr[n];
+    int arrr[n];
 
     for(int i = 0; i < n; i++) {
-        cin >> arr[i];
+        cin >> arrr[i];
     }
 
     int target;
     cin >> target;
 
-    int ans = binarySearch(arr, n, target);
+    int ans = binarySearch(arrr, n, target);
 
     if(ans == -1)
         cout << "Not Found";
