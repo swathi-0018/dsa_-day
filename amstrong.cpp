@@ -4,16 +4,16 @@ using namespace std;
 int main(){
   int n;
   cin >> n;
-  int sum = 0;
+  int summ = 0;
   int dup = n;
   int lad;
 
   while(n > 0){
     lad = n%10;
     n=n/10;
-    sum = sum + (lad*lad*lad);
+    summ = summ + (lad*lad*lad);
   }
-    if (sum == dup){
+    if (summ == dup){
         cout << "Armstrong Number";
     }
     else{
