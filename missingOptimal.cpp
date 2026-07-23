@@ -2,13 +2,13 @@
 #include <vector>
 using namespace std;
 
-int missingNum(vector<int> &arr) {
-    int n = arr.size() + 1;
+int missingNum(vector<int> &arrr) {
+    int n = arrr.size() + 1;
   
     // Calculate the sum of array elements
     int sum = 0;
     for (int i = 0; i < n - 1; i++) {
-        sum += arr[i];
+        sum += arrr[i];
     }
 
     // Calculate the expected sum
@@ -19,7 +19,7 @@ int missingNum(vector<int> &arr) {
 }
 
 int main() {
-    vector<int> arr = {8, 2, 4, 5, 3, 7, 1};  
-    cout << missingNum(arr);  
+    vector<int> arrr = {8, 2, 4, 5, 3, 7, 1};  
+    cout << missingNum(arrr);  
     return 0;
 }
