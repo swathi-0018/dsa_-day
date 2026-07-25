@@ -1,16 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
-void sel_sort(int arr[],int n){
+void sel_sort(int arrr[],int n){
     for(int i=0;i<n-1;i++){
         int min = i;
         for (int j=i+1;j<n;j++){
-            if(arr[j]<arr[min]){
+            if(arrr[j]<arrr[min]){
                 min = j;
             }
         }
-        int temp = arr[i];
-        arr[i] = arr[min];
-        arr[min] = temp;
+        int temp = arrr[i];
+        arrr[i] = arrr[min];
+        arrr[min] = temp;
     }
 }
 
@@ -18,13 +18,13 @@ int main()
 {
    int n;
    cin >> n;    
-   int arr[n];
+   int arrr[n];
    for(int i=0;i<n;i++){
-         cin>> arr[i];
+         cin>> arrr[i];
    }
-   sel_sort(arr,n);
+   sel_sort(arrr,n);
    for(int i=0;i<n;i++){
-    cout << arr[i] << " ";
+    cout << arrr[i] << " ";
    }
 
     return 0;
