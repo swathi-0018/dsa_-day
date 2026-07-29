@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
  int main(){
-    int rever= 0;
+    int reverse= 0;
     int lad;
     int n;
     cin>> n;
@@ -9,10 +9,10 @@ using namespace std;
     while (n>0){
         lad=n%10;
         n=n/10;
-        rever= (rever*10)+lad;
+        reverse= (reverse*10)+lad;
 
     }
-    if(dup==rever){
+    if(dup==reverse){
         cout <<"palidrome";
     }
     else{
