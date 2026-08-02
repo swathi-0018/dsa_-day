@@ -2,13 +2,13 @@
 #include <vector>
 using namespace std;
 
-int missingNum(vector<int>& arr) {
-    int n = arr.size() + 1;
+int missingNum(vector<int>& arrr) {
+    int n = arrr.size() + 1;
     int xor1 = 0, xor2 = 0;
 
     // XOR all array elements
     for (int i = 0; i < n - 1; i++) {
-        xor2 ^= arr[i];
+        xor2 ^= arrr[i];
     }
 
     // XOR all numbers from 1 to n
@@ -21,8 +21,8 @@ int missingNum(vector<int>& arr) {
 }
 
 int main() {
-    vector<int> arr = {8, 2, 4, 5, 3, 7, 1}; 
-    int res = missingNum(arr);  
+    vector<int> arrr = {8, 2, 4, 5, 3, 7, 1}; 
+    int res = missingNum(arrr);  
     cout << res << endl;  
     return 0;
 }
