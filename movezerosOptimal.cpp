@@ -3,27 +3,27 @@ using namespace std;
 
 class solution{
     public:
-    vector<int>movezeros(vector<int>&arr){
-        vector<int> temp(arr.size(),0);
+    vector<int>movezeros(vector<int>&arrr){
+        vector<int> temp(arrr.size(),0);
         int index = 0;
-        for (int i=0 ; i<arr.size() ; i++){
-            if(arr[i]!=0){
-                temp[index]=arr[i];
+        for (int i=0 ; i<arrr.size() ; i++){
+            if(arrr[i]!=0){
+                temp[index]=arrr[i];
                 index++;
 
             }
         }
-        for (int i=0;i<arr.size();i++){
-            arr[i]=temp[i];
+        for (int i=0;i<arrr.size();i++){
+            arrr[i]=temp[i];
         } 
-        return arr;
+        return arrr;
 
     }
 };
 int main(){
-    vector<int>arr={0,1,0,3,1,2};
+    vector<int>arrr={0,1,0,3,1,2};
     solution sol;
-    vector<int>result= sol.movezeros(arr);
+    vector<int>result= sol.movezeros(arrr);
     cout << "the new array is:" ;
     for (int num: result){
         cout << num << " ";
